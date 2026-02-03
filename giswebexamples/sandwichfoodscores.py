@@ -52,7 +52,7 @@ def create_map():
         ,marker_kwds={'radius':5,'fill':True}
         ,zoom_start=10.5
     )
-    return m.get_root().render()
+    return m.render()
 class Default(WorkerEntrypoint):
     async def fetch(self, request):
         hearders = {"content-type": "text/html;charset=UTF-8"}
